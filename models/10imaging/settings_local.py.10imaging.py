@@ -24,7 +24,7 @@ caffevis_prob_layer      = 'prob'
 def caffevis_layer_pretty_name_fn(name):
     return name.replace('pool','p').replace('norm','n')
 
-_control_height = 125
+_control_height = 30
 window_panes = (
     # (i, j, i_size, j_size)
     ('input',            (  0,    0,  300,   300)),
@@ -34,6 +34,7 @@ window_panes = (
     ('caffevis_control', (  0,  300,   _control_height, 1200)),
     ('caffevis_layers',  ( _control_height,  300,  900 - _control_height, 1200)),
 )
+
 # Use GPU? Default is True.
 caffevis_mode_gpu = False
 # Display tweaks.
